@@ -482,12 +482,7 @@ footer .logo{
         font-weight: 500;
         font-size: 18px;
         line-height: 36px;
-        /* identical to box height */
-
-
-        /* Gray 1 */
-
-        color: var(--light-grey-3-color);
+        color: var(--white-color);
         margin: 0 25px 0 25px;
     }
     .br_mobile{
@@ -600,8 +595,5 @@ footer .logo{
         line-height: 40px;
         display: flex;
         flex-direction: column;
-    }
-    footer li{
-        color: var(--white-color);
     }
 }
