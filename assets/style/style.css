@@ -331,7 +331,7 @@ input#email::placeholder {
     font-weight: 500;
     font-size: 15px;
     line-height: 27px;
-    background: var(--blue-color);
+    color: var(--blue-color);
 }
 .bloc_4 span{
     font-family: var(--font-poppins);
@@ -339,7 +339,7 @@ input#email::placeholder {
     font-weight: 500;
     font-size: 15px;
     line-height: 27px;
-    background: var(--red-color);
+    color: var(--red-color);
 }
 .title_h2 span{
     font-family: var(--font-poppins);
@@ -598,5 +598,8 @@ footer .logo{
     footer ul {
         list-style: none;
         line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        color: var(--white-color);
     }
 }
