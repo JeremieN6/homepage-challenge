@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Edie Homepage</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div id="app">
+        <div class="myheader">
+            <div class="logo">Edie</div>
+            <i class="fa fa-bars" id="fa-bars" aria-hidden="true" v-on:click="openmenu"></i>
+            <i class="fa fa-close" id="fa-close" aria-hidden="true" v-on:click="closmenu"></i>
+            <div class="menu" id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Our Works</li>
+                    <li>Clients</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="container_page" class="container_page">
+            <div class="bloc_1">
+
+                <div class="container_title_h1">
+                    <span>Unhappy with your website?</span>
+                    <h1 class="title_h1">We create beautiful <br> and fast web services</h1>
+                </div>
+                <div class="container_banner_img">
+                    <img src="./assets/images/heroImage.jpg" alt="Image Banner" class="img_content_banner">
+                </div>
+                <div class="container_h2">
+                    <h2 class="title_h2">Story, emotion <br> and purpose</h2>
+                    <div class="sub_title">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</div>
+                </div>
+                <div class="input_email">
+                    <div class="conainter_label">
+                        <label for="email">Want us to contact you?</label>
+                    </div>
+                    <div class="container_submit">
+                        <div class="submit">
+                            <input type="email" name="emal" id="email" placeholder="Email">
+                            <div class="btn_join"><span>Join</span></div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="title_h3">
+                    <h3>We offer high demand services</h3>
+                </div>
+            </div>
+            <div class="bloc_2">
+                <div class="jobs">
+                    <div class="ux-ui-design">
+                        <div class="icon_illustration_UX-UI">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="title_h4">UI/UX Design</div>
+                        <div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
+                        <div class="btn">Get started</div>
+                    </div>
+                    <div class="Front_End">
+                        <div class="icon_illustration_FE">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <div class="title_h4">Front End</div>
+                        <div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
+                        <div class="btn">Get started</div>
+                    </div>
+                    <div class="Back_End">
+                        <div class="icon_illustration_BE">
+                            <i class="fa fa-server" aria-hidden="true"></i>
+                        </div>
+                        <div class="title_h4">Back End</div>
+                        <div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</div>
+                        <div class="btn">Get started</div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc_3">
+                <div class="jobs_illustration">
+                    <div class="title_h3">
+                        <h3>Good design means <br> good business</h3>
+                    </div>
+                    <div class="illustration_desktop">
+                        <div class="illustration_desktop_row_1">
+                            <div class="container_img_job_illu1">
+                                <img src="./assets/images/smarthome.jpg" alt="Smarthome" class="img_content_job_illu1">
+                                <div class="job_illu_descr">
+                                    <span>Full stack application</span>
+                                    <p>Smart home dashboard</p>
+                                </div>
+                            </div>
+                            <div class="container_img_job_illu2">
+                                <img src="./assets/images/onboard.png" alt="onboard" class="img_content_job_illu2">
+                                <div class="job_illu_descr">
+                                    <span>UX/UI design</span>
+                                    <p>Onboard application</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="illustration_desktop_row_2">
+                            <div class="container_img_job_illu3">
+                                <img src="./assets/images/booking.png" alt="booking" class="img_content_job_illu3">
+                                <div class="job_illu_descr">
+                                    <span>Mobile application</span>
+                                    <p>Booking system</p>
+                                </div>
+                            </div>
+                            <div class="container_img_job_illu4">
+                                <img src="./assets/images/juice-product.png" alt="Juice Product" class="img_content_job_illu4">
+                                <div class="job_illu_descr">
+                                    <span>Front End applicati on</span>
+                                    <p>Juice product homepage</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="see_more">
+                            <p>see more 🠒</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bloc_4">
+                <div class="bloc_desktop">
+                    <div class="bloc_desktop_title">
+                        <span>Meet the team</span>
+                        <div class="title_h2">
+                            <h2>We are chilled and a laidback team</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </div>
+                    </div>
+                    <div class="gallery">
+                        <div class="left_side">
+                            <div class="container_img_left">
+                                <img src="./assets/images/person2.png" alt="Person 2 - Team Member" class="img_content_left">
+                            </div>
+                        </div>
+                        <div class="right_side">
+                            <div class="container_img_top_right">
+                                <img src="./assets/images/person1.png" alt="Person 1 - Team Member" class="img_content_top_right">
+                            </div>
+                            <div class="container_img_bottom_right">
+                                <img src="./assets/images/person3.png" alt="Person 3 - Team Member" class="img_content_bottom_right">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="container_review">
+                        <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+                    </div>
+                    <div class="container_perso_review">
+                        <div class="container_img_review">
+                            <img src="./assets/images/person4.png" alt="Person 4 - Review" class="img_content_review">
+                        </div>
+                        <div class="container_review_person_info">
+                            <div class="review_name">Carlos Tran</div>
+                            <div class="review_profession">The Decorate Gatsby</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="container_footer">
+                    <div class="menu_footer">
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Our Works</li>
+                            <li>Clients</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="logo_soc_network">
+                        <div class="logo">Edie</div>
+                        <div class="social_network">
+                            <div class="container_icon_insta">
+                                <img src="./assets/images/instagram.svg" alt="Icon Instagram" class="img_content_icon_insta">
+                            </div>
+                            <div class="container_icon_linkdIn">
+                                <img src="./assets/images/linkedin.svg" alt="Icon Linkedin" class="img_content_icon_linkdIn">
+                            </div>
+                            <div class="container_icon_twitter">
+                                <img src="./assets/images/twitter.svg" alt="Icon Twitter" class="img_content_icon_twitter">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_email">
+                        <label for="email">Want us to contact you?</label>
+                        <div class="container_submit">
+                            <div class="submit">
+                                <input type="email" name="emal" id="email" placeholder="Email">
+                                <div class="btn_join"><span>Join</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="credits">
+                    <p> <strong>Jerem EditHomePage</strong> - par <br class="br_mobile"> <i>Jérémie NGOYI MAOLE</i> - Développeur Full Stack</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+
+            },
+            methods: {
+               openmenu: function(){
+                var iconMenu = document.getElementById("fa-bars");
+                var close = document.getElementById("fa-close");
+                var menuContent = document.getElementById("menu");
+                var page = document.getElementById("container_page");
+
+                page.style.display = "none";
+                iconMenu.style.display = "none";
+                close.style.display = "block";
+                menuContent.style.display = "flex";
+               },
+               closmenu: function(){
+                var iconMenu = document.getElementById("fa-bars");
+                var close = document.getElementById("fa-close");
+                var menuContent = document.getElementById("menu");
+                var page = document.getElementById("container_page");
+
+                page.style.display = "block";
+                iconMenu.style.display = "block";
+                close.style.display = "none";
+                menuContent.style.display = "none";
+               }
+            }
+        })
+    </script>
+</body>
+</html>
