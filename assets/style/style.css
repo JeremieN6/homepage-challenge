@@ -599,7 +599,6 @@ footer .logo{
     .container_footer{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .container_icon_insta, .container_icon_linkdIn, .container_icon_twitter {
         width: 20%;
