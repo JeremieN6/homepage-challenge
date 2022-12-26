@@ -17,7 +17,7 @@
             <div class="logo">Edie</div>
             <i class="fa fa-bars" id="fa-bars" aria-hidden="true" v-on:click="openmenu"></i>
             <i class="fa fa-close" id="fa-close" aria-hidden="true" v-on:click="closmenu"></i>
-            <div class="menu" id="menu">
+            <div class="menuDesktop" id="menu">
                 <ul>
                     <li>Home</li>
                     <li>Services</li>
@@ -27,7 +27,15 @@
                 </ul>
             </div>
         </div>
-
+        <div class="menumobile" id="menumobile">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Our Works</li>
+                <li>Clients</li>
+                <li>Contact</li>
+            </ul>
+        </div>
         <div id="container_page" class="container_page">
             <div class="bloc_1">
 
@@ -224,25 +232,42 @@
                 var close = document.getElementById("fa-close");
                 var menuContent = document.getElementById("menu");
                 var page = document.getElementById("container_page");
+                var menuMobile = document.getElementById("menumobile");
 
                 page.style.display = "none";
                 iconMenu.style.display = "none";
                 close.style.display = "block";
-                menuContent.style.display = "flex";
+                menuMobile.style.display = "flex";
                },
                closmenu: function(){
                 var iconMenu = document.getElementById("fa-bars");
                 var close = document.getElementById("fa-close");
                 var menuContent = document.getElementById("menu");
                 var page = document.getElementById("container_page");
+                var menuMobile = document.getElementById("menumobile");
 
                 page.style.display = "block";
                 iconMenu.style.display = "block";
                 close.style.display = "none";
-                menuContent.style.display = "none";
+                menuMobile.style.display = "none";
                }
             }
         })
+        $(window).resize(function() {
+            var iconMenu = document.getElementById("fa-bars");
+                var close = document.getElementById("fa-close");
+                var menuContent = document.getElementById("menu");
+                var page = document.getElementById("container_page");
+                var menuMobile = document.getElementById("menumobile");
+        if ($(window).width() < 767) {
+            iconMenu.style.display = "block";
+            menuContent.style.display = "none";
+        }
+        else {
+            iconMenu.style.display = "none";
+            menuMobile.style.display = "flex"; 
+        }
+        });
     </script>
 </body>
 </html>

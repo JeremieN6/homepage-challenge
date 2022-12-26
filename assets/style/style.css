@@ -51,6 +51,20 @@ h2{
     display: none;
     font-size: 25px;
 }
+.menumobile,.menuDesktop{
+    display: none;
+}
+.menumobile {
+    justify-content: center;
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+}
+.menumobile ul li{
+    list-style: none;
+    }
 .logo{
     font-family: var(--font-heebo);
     font-style: normal;
@@ -162,17 +176,15 @@ input#email::placeholder {
     color: var(--light-grey-3-color);
     margin: 20px;
 }
-.menu{
-    display: none;
+.menuDesktop{
     justify-content: center;
-    line-height: 35px;
     font-family: var(--font-poppins);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 47px;
     }
-.menu ul{
+.menuDesktop ul{
     list-style: none;
 }
 .jobs{
@@ -467,23 +479,26 @@ footer .logo{
     .fa-bars{
         display: none;
     }
-    .menu{
-        display: block;
-    }
-    ul{
+    .menuDesktop{
         display: flex;
-        flex-direction: row;
-        list-style: none;
-        margin-right: 2em;
     }
-    li{
+    .menuDesktop ul{
+        margin-top: 0;
+    }
+    .menuDesktop ul li{
         font-family: var(--font-poppins);
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         line-height: 36px;
-        color: var(--white-color);
+        color: var(--black-color);
         margin: 0 25px 0 25px;
+    }   
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin-right: 2em;
     }
     .br_mobile{
         display: none;
