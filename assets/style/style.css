@@ -450,7 +450,7 @@ footer .logo{
     color: var(--mid-white-color);
 }
 .logo_soc_network{
-    margin: 45px;
+    margin: 45px 45px 20px;
 }
 .social_network{
     display: flex;
@@ -600,6 +600,7 @@ footer .logo{
     .container_footer{
         display: flex;
         justify-content: center;
+        align-items: flex-end;
     }
     .container_icon_insta, .container_icon_linkdIn, .container_icon_twitter {
         width: 20%;
